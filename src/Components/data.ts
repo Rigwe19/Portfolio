@@ -2,6 +2,25 @@ import apsmart from '../assets/apsmart.png';
 import hobusy from '../assets/hobusy.png';
 import chong from '../assets/chong.png';
 import jjb from '../assets/jjb.png';
+
+import css from '../assets/skills/css.svg';
+import electron from '../assets/skills/electron.svg';
+import express from '../assets/skills/express.svg';
+import html from '../assets/skills/html.svg';
+import javascript from '../assets/skills/javascript.svg';
+import laravel from '../assets/skills/laravel.svg';
+import nextjs from '../assets/skills/nextjs.svg';
+import nodejs from '../assets/skills/nodejs.svg';
+import php from '../assets/skills/php.svg';
+import react from '../assets/skills/react.svg';
+import rust from '../assets/skills/rust.svg';
+import tailwind from '../assets/skills/tailwind-css.svg';
+import tauri from '../assets/skills/tauri.svg';
+import vue from '../assets/skills/vue.svg';
+import angular from '../assets/skills/angular.svg';
+import typescript from '../assets/skills/typescript.svg';
+import bootstrap from '../assets/skills/bootstrap.svg';
+import jquery from '../assets/skills/jquery.svg';
 interface Project {
     title: string;
     subtitle: string;
@@ -43,72 +62,92 @@ export const projects:Project[] = [
 export const skills = [
     {
         name: "PHP",
-        logo: "./public/php.svg",
+        logo: php,
         rate: 4
     },
     {
         name: "Laravel",
-        logo: "./public/laravel.svg",
+        logo: laravel,
         rate: 4
     },
     {
-        name: "Javascript",
-        logo: "./public/javascript.svg",
+        name: "JavaScript",
+        logo: javascript,
         rate: 5
     },
     {
+        name: "TypeScript",
+        logo: typescript,
+        rate: 3
+    },
+    {
         name: "React",
-        logo: "./public/react.svg",
+        logo: react,
         rate: 5
     },
     {
         name: "Vuejs",
-        logo: "./public/vue.svg",
+        logo: vue,
         rate: 4
     },
     {
+        name: "Angular",
+        logo: angular,
+        rate: 3
+    },
+    {
+        name: "JQuery",
+        logo: jquery,
+        rate: 5
+    },
+    {
         name: "NodeJs",
-        logo: "./public/nodejs.svg",
+        logo: nodejs,
         rate: 3
     },
     {
         name: "NextJs",
-        logo: "./public/nextjs.svg",
+        logo: nextjs,
         rate: 2
     },
     {
         name: "ExpressJs",
-        logo: "./public/express.svg",
+        logo: express,
         rate: 3
     },
     {
         name: "Electron",
-        logo: "./public/electron.svg",
+        logo: electron,
         rate: 3
     },
     {
         name: "Html",
-        logo: "./public/html.svg",
+        logo: html,
         rate: 5
     },
     {
         name: "Css",
-        logo: "./public/css.svg",
+        logo: css,
         rate: 4
     },
     {
         name: "Tailwind Css",
-        logo: "./public/tailwind-css.svg",
+        logo: tailwind,
         rate: 4
     },
     {
+        name: "Bootstrap",
+        logo: bootstrap,
+        rate: 5
+    },
+    {
         name: "Rust",
-        logo: "./public/rust.svg",
+        logo: rust,
         rate: 3
     },
     {
         name: "Tauri",
-        logo: "./public/tauri.svg",
+        logo: tauri,
         rate: 2
     },
 ]
