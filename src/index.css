@@ -67,3 +67,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hero-img {
+  background: url(./img.png) center/cover no-repeat;
+  height: 400px;
+}

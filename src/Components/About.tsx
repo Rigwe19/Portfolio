@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../assets/1686126069267.png';
+import hero from '../assets/img.png';
 type Props = {}
 
 const About = (props: Props) => {
@@ -24,8 +24,8 @@ const About = (props: Props) => {
                         <a href="#projects" className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">See My Previous Works</a>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img src={hero} alt="hero" className="object-cover object-center rounded" />
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hero-img">
+                    {/* <img src={hero} alt="hero" className="object-cover object-center rounded" /> */}
                 </div>
             </div>
         </section>
