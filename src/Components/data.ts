@@ -2,6 +2,7 @@ import apsmart from '../assets/apsmart.png';
 import hobusy from '../assets/hobusy.png';
 import chong from '../assets/chong.png';
 import jjb from '../assets/jjb.png';
+import imagine from '../assets/imagine.png';
 
 import css from '../assets/skills/css.svg';
 import electron from '../assets/skills/electron.svg';
@@ -56,6 +57,13 @@ export const projects:Project[] = [
         description: "Bread Factory management for the smooth running of the company",
         image: jjb,
         link: "https://jjbfoods.com"
+    },
+    {
+        title: "Imagine Early Years and Elementary",
+        subtitle: "PHP, Laravel, JQuery, InertiaJs, React",
+        description: "Imagine Early Years and Elementary website",
+        image: imagine,
+        link: "https://imagineee.com"
     }
 ]
 
