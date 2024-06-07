@@ -1,11 +1,12 @@
 import React from 'react'
 import hero from '../assets/img.png';
+import { Element } from 'react-scroll';
 type Props = {}
-    let currentYear = new Date().getFullYear() - 2017;
+let currentYear = new Date().getFullYear() - 2017;
 
 const About = (props: Props) => {
     return (
-        <section id='about'>
+        <Element name='about'>
             <div className="container flex flex-col items-center px-10 py-20 mx-auto md:flex-row">
                 <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h1 className="mb-4 text-3xl font-medium text-white title-font sm:text-4xl">
@@ -13,9 +14,9 @@ const About = (props: Props) => {
                         <br className="hidden lg:inline-block" /> I love to build amazing apps.
                     </h1>
                     <p className="mb-8 leading-relaxed text-justify">
-                        I am a fullstack web developer with { currentYear } years+ experience PHP and the Laravel
+                        I am a fullstack web developer with {currentYear} years+ experience PHP and the Laravel
                         framework, Javascript with the following frameworks, ReactJs, VueJs
-                        and NodeJs and its frameworks expressJs and NextJs, i also have experience 
+                        and NodeJs and its frameworks expressJs and NextJs, i also have experience
                         in electronJs for cross platform desktops app and Ionic for cross platform
                         mobile apps with Laravel i can create RESTful API that the frontend can consume
                         or i use InertiaJs for the monolithic approach
@@ -29,7 +30,7 @@ const About = (props: Props) => {
                     <img src={hero} alt="hero" className="object-cover object-center rounded" />
                 </div>
             </div>
-        </section>
+        </Element>
     )
 }
 

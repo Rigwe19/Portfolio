@@ -1,12 +1,16 @@
 import React, { Children } from 'react';
 import { CodeBracketIcon } from '@heroicons/react/24/solid'
-import { projects } from './data';
+import { projects } from './Data/data';
+import { Element } from 'react-scroll';
+import jjb_app from '../assets/jjb-app.jpg';
+import jjb_app_dark from '../assets/jjb-app-dark.jpg';
+import { app_details } from './Data/app-data';
 
 type Props = {}
 
 function Projects({ }: Props) {
   return (
-    <section id="projects" className="text-gray-400 bg-gray 900 body-font">
+    <Element name="projects" className="text-gray-400 bg-gray 900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeBracketIcon className="inline-block w-10 mx-auto mb-4" />
@@ -35,9 +39,23 @@ function Projects({ }: Props) {
               </div>
             </a>
           )))}
+          <div className="w-full"></div>
+
+          {Children.toArray(app_details.map(detail => <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+            <div className="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div className="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+              <img src={detail.image} className="dark:hidden w-[272px] h-[572px]" />
+              <img src={detail.image_dark} className="hidden dark:block w-[272px] h-[572px]" />
+            </div>
+          </div>))}
+
+
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 
